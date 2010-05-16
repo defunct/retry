@@ -4,8 +4,18 @@ import com.goodworkalan.mix.ProjectModule;
 import com.goodworkalan.mix.builder.Builder;
 import com.goodworkalan.mix.builder.JavaProject;
 
-public class RetryProject extends ProjectModule {
-    @Override
+/**
+ * Builds the project definition for Retry.
+ *
+ * @author Alan Gutierrez
+ */
+public class RetryProject implements ProjectModule {
+    /**
+     * Build the project definition for Retry.
+     *
+     * @param builder
+     *          The project builder.
+     */
     public void build(Builder builder) {
         builder
             .cookbook(JavaProject.class)
